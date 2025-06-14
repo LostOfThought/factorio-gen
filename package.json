@@ -27,7 +27,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pnpm run test && tsc",
+    "build": "tsc",
     "prepublishOnly": "pnpm run build",
     "test": "vitest --run",
     "release": "semantic-release",
