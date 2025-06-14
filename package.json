@@ -1,0 +1,70 @@
+{
+  "name": "factorio-gen",
+  "version": "0.0.0-development",
+  "description": "Generate Factorio mod info.json from package.json",
+  "main": "dist/generate-info-json.js",
+  "types": "dist/generate-info-json.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/generate-info-json.d.ts",
+      "import": "./dist/generate-info-json.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "type": "module",
+  "bin": {
+    "factorio-gen": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LostOfThought/factorio-gen.git"
+  },
+  "homepage": "https://github.com/LostOfThought/factorio-gen",
+  "bugs": {
+    "url": "https://github.com/LostOfThought/factorio-gen/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "pnpm run test && tsc",
+    "prepublishOnly": "pnpm run build",
+    "test": "vitest --run",
+    "release": "semantic-release",
+    "commit": "cz"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "keywords": [
+    "factorio",
+    "mod",
+    "info.json",
+    "package.json",
+    "build-tool"
+  ],
+  "author": "Ryan \"LostOfThought\" Wright",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.8.3",
+    "zod": "^3.25.57"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.1",
+    "@types/node": "^24.0.0",
+    "@vitest/ui": "^3.2.3",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^24.2.5",
+    "vitest": "^3.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

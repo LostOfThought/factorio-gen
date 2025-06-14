@@ -1,0 +1,31 @@
+{
+  "name": "enhanced-logistics-belts",
+  "version": "2.1.0",
+  "description": "Adds enhanced belt systems with improved throughput and new logistics options for advanced factory automation.",
+  "author": {
+    "name": "TestModder42"
+  },
+  "contributors": [
+    {
+      "name": "HelperDev"
+    },
+    "CollaboratorName"
+  ],
+  "bugs": {
+    "name": "https://github.com/testmodder42/enhanced-logistics-belts/issues"
+  },
+  "homepage": "https://github.com/testmodder42/enhanced-logistics-belts",
+  "factorio": {
+    "factorio_version": "2.0",
+    "dependencies": [
+      "base >= 2.0.0",
+      "? space-age >= 2.0.0"
+    ],
+    "category": "content",
+    "tags": [
+      "logistics",
+      "manufacturing",
+      "belts"
+    ]
+  }
+}
