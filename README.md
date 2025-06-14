@@ -5,9 +5,9 @@ Generate Factorio mod `info.json` from `package.json`.
 ## Installation
 
 ```bash
-pnpm add factorio-gen
+pnpm add @lostofthought/factorio-gen
 # or
-npm install factorio-gen
+npm install @lostofthought/factorio-gen
 ```
 
 ## Usage
