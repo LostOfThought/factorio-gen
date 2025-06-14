@@ -102,3 +102,7 @@ pnpm run build
 # Test locally
 node dist/cli.js --help
 ``` 
+
+## Made with AI
+
+I've had a lot of back and forth with it, and need to do a clean rewrite eventually. Just trying to get this out the door.
