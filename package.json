@@ -1,5 +1,5 @@
 {
-  "name": "factorio-gen",
+  "name": "@lostofthought/factorio-gen",
   "version": "0.0.0-development",
   "description": "Generate Factorio mod info.json from package.json",
   "main": "dist/generate-info-json.js",
